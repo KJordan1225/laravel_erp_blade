@@ -6,5 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class CompanySetting extends Model
 {
-    //
+    protected $fillable = [
+        'company_name',
+        'email',
+        'phone',
+        'address',
+        'tax_number',
+        'currency',
+        'default_tax_rate',
+    ];
 }
