@@ -55,7 +55,7 @@
             <span>Invoices</span>
         </a>
 
-        <a href="{{ route('payments.index') }}" class="sidebar-link {{ request()->routeIs('payments.*') ? 'active' : '' }}">
+      {{--  <a href="{{ route('payments.index') }}" class="sidebar-link {{ request()->routeIs('payments.*') ? 'active' : '' }}">
             <i class="bi bi-credit-card"></i>
             <span>Payments</span>
         </a>
@@ -73,6 +73,6 @@
         <a href="{{ route('company-settings.index') }}" class="sidebar-link {{ request()->routeIs('company-settings.*') ? 'active' : '' }}">
             <i class="bi bi-gear"></i>
             <span>Company Settings</span>
-        </a>
+        </a> --}}
     </nav>
 </aside>

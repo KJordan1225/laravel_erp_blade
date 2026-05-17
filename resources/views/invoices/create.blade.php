@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
-@section('title', 'Add Sales Order - Blue Orange ERP')
-@section('page_title', 'Add Sales Order')
-@section('page_subtitle', 'Create a customer sales order')
+@section('title', 'Add Invoice - Blue Orange ERP')
+@section('page_title', 'Add Invoice')
+@section('page_subtitle', 'Create a new invoice')
 
 @section('content')
 <div class="erp-card">
     <div class="p-3 border-bottom">
-        <h5 class="mb-0 text-primary fw-bold">Sales Order Information</h5>
+        <h5 class="mb-0 text-primary fw-bold">Invoice Information</h5>
     </div>
 
     <div class="p-4">
@@ -23,7 +23,7 @@
             <div class="mt-4">
                 <button class="btn btn-orange" type="submit">
                     <i class="bi bi-save me-1"></i>
-                    Save Sales Order
+                    Save Invoice
                 </button>
 
                 <a href="{{ route('invoices.index') }}" class="btn btn-outline-secondary">

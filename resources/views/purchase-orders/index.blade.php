@@ -1,17 +1,17 @@
 @extends('layouts.app')
 
-@section('title', 'Sales Orders - Blue Orange ERP')
-@section('page_title', 'Sales Orders')
-@section('page_subtitle', 'Manage customer sales orders')
+@section('title', 'Purchase Orders - Blue Orange ERP')
+@section('page_title', 'Purchase Orders')
+@section('page_subtitle', 'Manage customer purchase orders')
 
 @section('content')
 <div class="erp-card">
     <div class="p-3 border-bottom d-flex justify-content-between align-items-center">
-        <h5 class="mb-0 text-primary fw-bold">Sales Order List</h5>
+        <h5 class="mb-0 text-primary fw-bold">Purchase Order List</h5>
 
         <a href="{{ route('purchase-orders.create') }}" class="btn btn-orange">
             <i class="bi bi-plus-circle me-1"></i>
-            Add Sales Order
+            Add Purchase Order
         </a>
     </div>
 

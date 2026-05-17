@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
-@section('title', 'Edit Sales Order - Blue Orange ERP')
-@section('page_title', 'Edit Sales Order')
-@section('page_subtitle', 'Update sales order')
+@section('title', 'Edit Invoice - Blue Orange ERP')
+@section('page_title', 'Edit Invoice')
+@section('page_subtitle', 'Update invoice')
 
 @section('content')
 <div class="erp-card">
     <div class="p-3 border-bottom">
-        <h5 class="mb-0 text-primary fw-bold">Sales Order Information</h5>
+        <h5 class="mb-0 text-primary fw-bold">Invoice Information</h5>
     </div>
 
     <div class="p-4">

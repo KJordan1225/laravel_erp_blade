@@ -1,17 +1,17 @@
 @extends('layouts.app')
 
-@section('title', 'Sales Orders - Blue Orange ERP')
-@section('page_title', 'Sales Orders')
-@section('page_subtitle', 'Manage customer sales orders')
+@section('title', 'Invoices - Blue Orange ERP')
+@section('page_title', 'Invoices')
+@section('page_subtitle', 'Manage customer Invoices')
 
 @section('content')
 <div class="erp-card">
     <div class="p-3 border-bottom d-flex justify-content-between align-items-center">
-        <h5 class="mb-0 text-primary fw-bold">Sales Order List</h5>
+        <h5 class="mb-0 text-primary fw-bold">Invoice List</h5>
 
         <a href="{{ route('invoices.create') }}" class="btn btn-orange">
             <i class="bi bi-plus-circle me-1"></i>
-            Add Sales Order
+            Add Invoice
         </a>
     </div>
 
@@ -64,7 +64,7 @@
                 @empty
                     <tr>
                         <td colspan="6" class="text-center text-muted py-4">
-                            No sales orders found.
+                            No Invoices found.
                         </td>
                     </tr>
                 @endforelse

@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'View Sales Order - Blue Orange ERP')
-@section('page_title', 'View Sales Order')
-@section('page_subtitle', 'Sales order details')
+@section('title', 'View Invoice - Blue Orange ERP')
+@section('page_title', 'View Invoice')
+@section('page_subtitle', 'Invoice details')
 
 @section('content')
 <div class="erp-card mb-4">

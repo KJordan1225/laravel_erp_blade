@@ -12,6 +12,8 @@ use App\Http\Controllers\InventoryController;
 use App\Http\Controllers\SalesOrderController;
 use App\Http\Controllers\PurchaseOrderController;
 use App\Http\Controllers\InvoiceController;
+use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\ExpenseController;
 
 Route::get('/', function () {
     return redirect()->route('dashboard');
@@ -47,4 +49,7 @@ Route::middleware('auth')->group(function () {
     Route::resource('sales-orders', SalesOrderController::class);
     Route::resource('purchase-orders', PurchaseOrderController::class);
     Route::resource('invoices', InvoiceController::class);
+
+    Route::resource('payments', PaymentController::class);
+    Route::resource('expenses', ExpenseController::class);
 });
