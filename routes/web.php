@@ -14,6 +14,8 @@ use App\Http\Controllers\PurchaseOrderController;
 use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\ExpenseController;
+use App\Http\Controllers\ReportController;
+use App\Http\Controllers\CompanySettingController;
 
 Route::get('/', function () {
     return redirect()->route('dashboard');
@@ -49,7 +51,11 @@ Route::middleware('auth')->group(function () {
     Route::resource('sales-orders', SalesOrderController::class);
     Route::resource('purchase-orders', PurchaseOrderController::class);
     Route::resource('invoices', InvoiceController::class);
-
     Route::resource('payments', PaymentController::class);
     Route::resource('expenses', ExpenseController::class);
+
+    Route::get('reports', [ReportController::class, 'index'])->name('reports.index');
+
+    Route::get('company-settings', [CompanySettingController::class, 'index'])->name('company-settings.index');
+    Route::put('company-settings', [CompanySettingController::class, 'update'])->name('company-settings.update');
 });
